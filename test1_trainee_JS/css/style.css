@@ -374,7 +374,9 @@ input[type=email] {
   background: url(../img/send.png) 22px 23px no-repeat;
   background-color: #16a085;
 }
-
+.section {
+  margin: 0 auto;
+}
 .articleWidth {
   margin: 0 auto;
   width: 900px;
