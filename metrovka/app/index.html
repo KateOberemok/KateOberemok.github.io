@@ -3,201 +3,382 @@
 <head>
 	<title>test</title>
 	<meta charset="UTF-8">
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-
-
-	  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 	<div class="wrapper">
-	<div class="section">
-		<h1 class="section__heading">
-			Лучшие предложения в Киеве		
-		</h1>
-		<div class="slider">
-			<div class="slider__array-left"></div>	
-			<div class="slider__array-right"></div>	
-			<ul class="slider__box">
-				<li class="slider__list">
-					<a class="slider__link" href="">
-						<img class="slider__image" alt="" src="img/homees-01.png">
-						<p class="slider__text-price">7 800 грн</p>
-						<p class="slider__text-secondary-info">2 комн. &bull; 30 кв.м.</p>
-						<p class="slider__text-location">Политехнический институт</p>
-					</a>
-				</li>
-				<li class="slider__list">
-					<a class="slider__link" href="">
-						<img class="slider__image" alt="" src="img/homees-01.png">
-						<p class="slider__text-price"> 10 200 грн</p>
-						<p class="slider__text-secondary-info">1 комн. &bull; 30 кв.м.</p>
-						<p class="slider__text-location">Политехнический институт</p>
-					</a>
-				</li>
-				<li class="slider__list">
-					<a class="slider__link" href="">
-						<img class="slider__image" alt="" src="img/homees-01.png">
-						<p class="slider__text-price"> 6 900 грн</p>
-						<p class="slider__text-secondary-info">2 комн. &bull; 30 кв.м.</p>
-						<p class="slider__text-location">Политехнический институт</p>
-					</a>
-				</li>
-				<li class="slider__list">
-					<a class="slider__link" href="">
-						<img class="slider__image" alt="" src="img/homees-01.png">
-						<p class="slider__text-price"> 9 000 грн</p>
-						<p class="slider__text-secondary-info">2 комн. &bull; 30 кв.м.</p>
-						<p class="slider__text-location">Политехнический институт</p>
-					</a>
-				</li>
-			</ul>
+		<div class="header">
+			<div class="header__container">
+				<div class="nav">
+					
+				</div>
+				
+					<h1 class="title title--main">
+						Поиск недвижимости в Украине
+					</h1>
+					<div class="container">
+						<div class="container__banner">
+							<p class="text text--white">Выберите город</p>
+							<select class="select select--header">
+								<option>Киев</option>
+								<option>Киев</option>
+								<option>Киев</option>
+							</select>
+						</div>	
+						<div class="container__banner">
+							<p class="text text--white">Кол-во комнат</p>
+							<div class="checkbox-navigation checkbox-navigation--circles">
+								<input class="checkbox" id="ch-1" type="checkbox" name=" quantity" checked/><label class="checkbox-circles" for="ch-1">1</label>
+								<input class="checkbox" id="ch-2"  type="checkbox" name=" quantity"/><label class="checkbox-circles ch-2" for="ch-2">2</label>
+								<input class="checkbox" id="ch-3" type="checkbox" name=" quantity"/><label class="checkbox-circles ch-3" for="ch-3">3</label>
+								<input class="checkbox" id="ch-4" type="checkbox" name=" quantity"/><label class="checkbox-circles ch-4" for="ch-4">4</label>
+								<input class="checkbox" id="ch-5" type="checkbox" name=" quantity"/><label class="checkbox-circles ch-5" for="ch-5">5+</label>	
+							</div>
+						</div>	
+					<div class="container__banner">
+						<a class="button button--secondary" href="">Перейти к поиску</a>
+					</div>	
+				</div>
+			</div>
 		</div>
 
-		<a class="section__link" href="">
-			Смотреть лучшие ценовые предложения
-		</a>
+		<div class="search">
+			<div class="container container--reverse">
+				<div class="container__banner container__banner--left-position">
+					<h3 class="title title--search">
+						Недвижимость возле метро
+					</h3>
+					<div class="checkbox-navigation">
+						
+						<input class="checkbox" id="ch-left" type="checkbox" name="search" checked/><label class="checkbox-label" for="ch-left">Квартиры</label>
+						<input class="checkbox" id="ch-middle"  type="checkbox" name="search"/><label class="checkbox-label checkbox-label--short" for="ch-middle">Дома</label>
+						<input class="checkbox" id="ch-right" type="checkbox" name="search"/><label class="checkbox-label" for="ch-right">Офисы</label>	
+					</div>
+
+
+					
+					<select class="select">
+						<option>Политехнический институт</option>
+						<option>Политехнический институт</option>
+						<option>Политехнический институт</option>
+					</select>
+					<div class="wrap--button">
+						<a class="button" href="">Показать результаты поиска</a>
+					</div>
+				</div>
+				<div class="container__banner">
+					<img src="img/metro.png" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="section">
+			<h1 class="title">
+				Лучшие предложения в Киеве		
+			</h1>
+			<div class="slider">
+				<div class="slider__array-left"></div>	
+				<div class="slider__array-right"></div>	
+				<ul class="slider__box">
+					<li class="slider__list">
+						<a class="slider__link" href="">
+							<div class="menu-icon">
+								<div class="menu-icon__circle"></div>
+								<div class="menu-icon__circle menu-icon__circle--middle-circle"></div>
+								<div class="menu-icon__circle menu-icon__circle--bottom-circle"></div>
+								
+							</div>
+							<img class="slider__image" alt="" src="img/homees-01.png">
+							<p class="text text--icon">7 800 грн</p>
+							<p class="text-little">2 комн. &bull; 30 кв.м.</p>
+							<p class="text-little text-little--icon">Политехнический институт</p>
+						</a>
+					</li>
+					<li class="slider__list">
+						<a class="slider__link" href="">
+							<div class="menu-icon">
+								<div class="menu-icon__circle"></div>
+								<div class="menu-icon__circle menu-icon__circle--middle-circle"></div>
+								<div class="menu-icon__circle menu-icon__circle--bottom-circle"></div>
+								
+							</div>
+							<img class="slider__image" alt="" src="img/homees-01.png">
+							
+							<p class="text text--icon"> 10 200 грн</p>
+							<p class="text-little">1 комн. &bull; 30 кв.м.</p>
+							<p class="text-little text-little--icon">Политехнический институт</p>
+						</a>
+					</li>
+					<li class="slider__list">
+						<a class="slider__link" href="">
+								<div class="menu-icon">
+								<div class="menu-icon__circle"></div>
+								<div class="menu-icon__circle menu-icon__circle--middle-circle"></div>
+								<div class="menu-icon__circle menu-icon__circle--bottom-circle"></div>
+								
+							</div>
+							<img class="slider__image" alt="" src="img/homees-01.png">
+							
+							<p class="text text--icon"> 6 900 грн</p>
+							<p class="text-little">2 комн. &bull; 30 кв.м.</p>
+							<p class="text-little text-little--icon">Политехнический институт</p>
+						</a>
+					</li>
+					<li class="slider__list">
+						<a class="slider__link" href="">
+							<div class="menu-icon">
+								<div class="menu-icon__circle"></div>
+								<div class="menu-icon__circle menu-icon__circle--middle-circle"></div>
+								<div class="menu-icon__circle menu-icon__circle--bottom-circle"></div>
+								
+							</div>
+							<img class="slider__image" alt="" src="img/homees-01.png">
+							
+							<p class="text text--icon"> 9 000 грн</p>
+							<p class="text-little">2 комн. &bull; 30 кв.м.</p>
+							<p class="text-little text-little--icon">Политехнический институт</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<a class="section__link" href="">
+				Смотреть лучшие ценовые предложения
+			</a>
+		</div>
+		
+		<div class="section">
+			<h1 class="title">
+				Последние объявления в Киеве		
+			</h1>
+			<div class="tab-navigation">
+				<div class="tab-navigation__list tab-navigation__list--active"><a class="tab-navigation__link" href="">Квартиры </a>
+				</div>
+				<div class="tab-navigation__list"><a class="tab-navigation__link" href="">Дома</a>
+				</div>
+				<div class="tab-navigation__list"><a class="tab-navigation__link" href="">Офисы</a>
+				</div>
+			</div>
+			<div class="article">
+			<div class="slider slider--big-indent ">
+				<div class="slider__array-left"></div>	
+				<div class="slider__array-right"></div>	
+				<ul class="slider__box">
+					<li class="slider__list">
+						<a class="slider__link" href="">
+							<div class="menu-icon">
+									<div class="menu-icon__circle"></div>
+									<div class="menu-icon__circle menu-icon__circle--middle-circle"></div>
+									<div class="menu-icon__circle menu-icon__circle--bottom-circle"></div>
+									
+								</div>
+							<img class="slider__image" alt="" src="img/homees-02.png">
+							
+							<p class="text text--icon">11 800 грн</p>
+							<p class="text-little">2 комн. &bull; 48 кв.м.</p>
+							<p class="text-little text-little--icon">Политехнический институт</p>
+						</a>
+					</li>
+					<li class="slider__list">
+						<a class="slider__link" href="">
+							<div class="menu-icon">
+									<div class="menu-icon__circle"></div>
+									<div class="menu-icon__circle menu-icon__circle--middle-circle"></div>
+									<div class="menu-icon__circle menu-icon__circle--bottom-circle"></div>
+									
+								</div>
+							<img class="slider__image" alt="" src="img/homees-03.png">
+							
+							<p class="text text--icon"> 15 000 грн</p>
+							<p class="text-little">3 комн. &bull; 100 кв.м.</p>
+							<p class="text-little text-little--icon">Шулявская</p>
+						</a>
+					</li>
+					<li class="slider__list">
+						<a class="slider__link" href="">
+								<div class="menu-icon">
+									<div class="menu-icon__circle"></div>
+									<div class="menu-icon__circle menu-icon__circle--middle-circle"></div>
+									<div class="menu-icon__circle menu-icon__circle--bottom-circle"></div>
+									
+								</div>
+							<img class="slider__image" alt="" src="img/homees-04.png">
+							
+							<p class="text text--icon"> 11 800 грн</p>
+							<p class="text-little">1 комн. &bull; 30 кв.м.</p>
+							<p class="text-little text-little--icon text-little--icon-blue">Контрактовая площадь</p>
+						</a>
+					</li>
+					<li class="slider__list">
+						<a class="slider__link" href="">
+							<div class="menu-icon">
+								<div class="menu-icon__circle"></div>
+								<div class="menu-icon__circle menu-icon__circle--middle-circle"></div>
+								<div class="menu-icon__circle menu-icon__circle--bottom-circle"></div>	
+							</div>
+							<img class="slider__image" alt="" src="img/homees-05.png">
+							<p class="text text--icon"> 7 000 грн</p>
+							<p class="text-little">2 комн. &bull; 40 кв.м.</p>
+							<p class="text-little text-little--icon text-little--no-icon">просп.Победы, 18а</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			</div>
+			<a class="section__link" href="">
+				Смотреть самые свежие объявления
+			</a>
+		</div>
+
+		<div class="section section--no-wrap">
+			<h1 class="title">
+				Общайтесь в Telegram	
+			</h1>
+			<p class="section__paragraph section__paragraph--no-shadow">Не отвлекайтесь больше на формальности. Получайте моментальные уведомления о новых объявлениях, общайтесь без ограничений</p>
+				
+			<div class="tab-navigation">
+				<div class="tab-navigation__list tab-navigation__list--active"><a class="tab-navigation__link" href="">Поиск недвижимости</a>
+				</div>
+				<div class="tab-navigation__list tab-navigation__list--disabled"><a class="tab-navigation__link" href="">Общение с клиентами</a>
+				</div>
+			</div>	
+			<div class="container">
+				<div class="container__banner container__banner--hide">
+					<img src="img/mobile.png" alt="mobile">
+				</div>
+				<div class="container__banner  container__banner--banner-with-margin">
+					<div class="section section--section-with-padding">
+						<h2 class="title title--title-icon">
+							Telegram	
+						</h2>
+						<h3 class="title title--subtitle">
+							Metrovka Bot	
+						</h3>
+						<p class="container__text">1. Собирайте аналитику по объектам</p>
+						<p class="container__text">2. Получаййте подсказки по эффективному продвижению объявлений</p>
+						<p class="container__text last-text">3. Общайтесь с клиентами через специальный канал телекоммуникации</p>
+						<a class="button bunner-button" href="">Присоединиться в Telegram</a>
+					</div>
+				<div>			
+			</div>
+		</div>
+	
+
+	</div>
+		<div class="wrap">		
+			<input class="radio" id="left" type="radio" name="slider" checked/>
+				<label class="radio-label" for="left"></label>	
+			<input class="radio" id="right"  name="slider"  type="radio" />
+				<label class="radio-label"  for="right"></label>
+		</div>
+	</div>
+
+		<div class="section">
+			<h1 class="title">
+				Блог Metrovka	
+			</h1>
+			<p class="section__paragraph">
+				Хитрости, приемы, советы, фото и видео - 	все о том,продать, купить, сдать в аренду или арендовать недвижимость
+			</p>
+
+			<div class="container">
+				<div class="container__banner">
+					<a class="container__link" href="">
+							<div class="menu-icon">
+								<div class="menu-icon__circle"></div>
+								<div class="menu-icon__circle menu-icon__circle--middle-circle"></div>
+								<div class="menu-icon__circle menu-icon__circle--bottom-circle"></div>	
+							</div>
+							<img class="container__image" alt="" src="img/article1.png">
+							<p class="text-little text-little--uppercase">Лайфхак</p>
+							<p class="text-little--title">
+								Киевляне могут оплатить коммуналку через facebook...
+							</p>
+							<p class="text-little text-little--little-indent">Татьяна Мальняк &bull; 5 мин. чтения</p>
+						</a>
+				</div>
+				<div class="container__banner">
+									<a class="container__link" href="">
+							<div class="menu-icon">
+								<div class="menu-icon__circle"></div>
+								<div class="menu-icon__circle menu-icon__circle--middle-circle"></div>
+								<div class="menu-icon__circle menu-icon__circle--bottom-circle"></div>	
+							</div>
+							<img class="container__image" alt="" src="img/article2.png">
+							<p class="text-little text-little--uppercase-blue">Совет metrovka</p>
+							<p class="text-little--title">
+								ТОП-5 самых дешевых квартир Киева
+							</p>
+							<p class="text-little text-little--little-indent">Татьяна Мальняк &bull; 4 мин. чтения</p>
+						</a>
+				</div>
+				<div class="container__banner">
+						<a class="container__link" href="">
+							<div class="menu-icon">
+								<div class="menu-icon__circle"></div>
+								<div class="menu-icon__circle menu-icon__circle--middle-circle"></div>
+								<div class="menu-icon__circle menu-icon__circle--bottom-circle"></div>	
+							</div>
+							<img class="container__image" alt="" src="img/article3.png">
+							<p class="text-little text-little--uppercase-blue">Технологии</p>
+							<p class="text-little--title">
+								Смарт-квартиры: цены, предложения и законность
+							</p>
+							<p class="text-little text-little--little-indent">Татьяна Мальняк &bull; 2 мин. чтения</p>
+						</a>
+				</div>
+			</div>
+		</div>
+
+	<div class="footer">
+			<div class="footer__banner">
+				<a class="footer__link" href="">
+					<h3 class="footer__title">Metrovka</h3>
+				</a>
+				<a href="" class="footer__link">О компании</a>
+				<a href="" class="footer__link">Пресса о нас</a>
+				<a href="" class="footer__link">Пользовательское соглашение</a>
+				<a href="" class="footer__link">Карта сайта</a>
+				<a href="" class="footer__link">Помощь</a>
+			</div>
+			<div class="footer__banner">
+				<a class="footer__link" href="">
+					<h3 class="footer__title">Партнерство</h3>
+				</a>
+				<a href="" class="footer__link">Как разместить объвление</a>
+				<a href="" class="footer__link">Инструменты подвижения</a>
+				<a href="" class="footer__link">Правила заполнения объявлений</a>
+			</div>
+			<div class="footer__banner">
+				<a class="footer__link" href="">
+					<h3 class="footer__title">Узнайте больше</h3>
+				</a>
+				<a href="" class="footer__link">Бонусная программа Bonus+</a>
+				<a href="" class="footer__link">Telegram Metrovka Bot</a>
+				<a href="" class="footer__link">Как работает поиск</a>
+				<a href="" class="footer__link">Как пользоваться избранным</a>
+			</div>
+			<div class="footer__banner">
+				<a class="footer__link" href="">
+					<h3 class="footer__title">Контакты</h3>
+				</a>
+				<div class="container container--sprite">
+				<a href="" class="footer__link footer__link--sprite"><img class="footer__img" src="img/sprites.png" alt=""></a>
+				<a href="" class="footer__link footer__link--sprite"><img class="footer__img footer__img--middle-sprite" alt="" src="img/sprites.png"></a>
+				<a href="" class="footer__link footer__link--sprite"><img class="footer__img footer__img--right-sprite" src="img/sprites.png" alt=""></a>
+				</div>
+				<p class="footer__text">ул. Жилянская, 37</p>
+				<p class="footer__text">Киев, 01033</p>
+				<p class="footer__text footer__text--big">info@metrovka.ua</p>
+				<a class="button button--small" href="">Оставить заявку</a>
+			</div>
 	</div>
 	
-	<div class="section tabs">
-		<h1 class="section__heading">
-			Последние объявления в Киеве		
-		</h1>
-		<ul class="tab-navigation">
-			<li class="tab-navigation__list"><a class="tab-navigation__link" href="#firstTab">Квартиры</a></li>
-			<li class="tab-navigation__list"><a class="tab-navigation__link" href="#secondTab">Дома</a></li>
-			<li class="tab-navigation__list"><a class="tab-navigation__link" href="#thirdTab">Офисы</a></li>
-		</ul>
-		<div class="tab-navigation__article" id="firstTab">
-		<div class="slider">
-			<div class="slider__array-left"></div>	
-			<div class="slider__array-right"></div>	
-			<ul class="slider__box">
-				<li class="slider__list">
-					<a class="slider__link" href="">
-						<img class="slider__image" alt="" src="img/homees-02.png">
-						<p class="slider__text-price">11 800 грн</p>
-						<p class="slider__text-secondary-info">2 комн. &bull; 48 кв.м.</p>
-						<p class="slider__text-location">Политехнический институт</p>
-					</a>
-				</li>
-				<li class="slider__list">
-					<a class="slider__link" href="">
-						<img class="slider__image" alt="" src="img/homees-03.png">
-						<p class="slider__text-price"> 15 000 грн</p>
-						<p class="slider__text-secondary-info">3 комн. &bull; 100 кв.м.</p>
-						<p class="slider__text-location">Шулявская</p>
-					</a>
-				</li>
-				<li class="slider__list">
-					<a class="slider__link" href="">
-						<img class="slider__image" alt="" src="img/homees-04.png">
-						<p class="slider__text-price"> 11 800 грн</p>
-						<p class="slider__text-secondary-info">1 комн. &bull; 30 кв.м.</p>
-						<p class="slider__text-location slider__text-location--blue">Контрактовая площадь</p>
-					</a>
-				</li>
-				<li class="slider__list">
-					<a class="slider__link" href="">
-						<img class="slider__image" alt="" src="img/homees-05.png">
-						<p class="slider__text-price"> 7 000 грн</p>
-						<p class="slider__text-secondary-info">2 комн. &bull; 40 кв.м.</p>
-						<p class="slider__text-location slider__text-location--no-metro">просп.Победы, 18а</p>
-					</a>
-				</li>
-			</ul>
-		</div>
-		</div>
+		<img class="logo"  src="img/logo.png" alt="logo">
 
-<!-- <div class="tab-navigation__article--second-article" id="secondTab">
-		<div class="slider">
-			<div class="slider__array-left"></div>	
-			<div class="slider__array-right"></div>	
-			<ul class="slider__box">
-				<li class="slider__list">
-					<a class="slider__link" href="">
-						<img class="slider__image" alt="" src="img/homees-04.png">
-						<p class="slider__text-price">11 800 грн</p>
-						<p class="slider__text-secondary-info">2 комн. &bull; 48 кв.м.</p>
-						<p class="slider__text-location">Политехнический институт</p>
-					</a>
-				</li>
-				<li class="slider__list">
-					<a class="slider__link" href="">
-						<img class="slider__image" alt="" src="img/homees-04.png">
-						<p class="slider__text-price"> 15 000 грн</p>
-						<p class="slider__text-secondary-info">3 комн. &bull; 100 кв.м.</p>
-						<p class="slider__text-location">Шулявская</p>
-					</a>
-				</li>
-				<li class="slider__list">
-					<a class="slider__link" href="">
-						<img class="slider__image" alt="" src="img/homees-04.png">
-						<p class="slider__text-price"> 11 800 грн</p>
-						<p class="slider__text-secondary-info">1 комн. &bull; 30 кв.м.</p>
-						<p class="slider__text-location--blue">Контрактовая площадь</p>
-					</a>
-				</li>
-				<li class="slider__list">
-					<a class="slider__link" href="">
-						<img class="slider__image" alt="" src="img/homees-04.png">
-						<p class="slider__text-price"> 7 000 грн</p>
-						<p class="slider__text-secondary-info">2 комн. &bull; 40 кв.м.</p>
-						<p class="slider__text-location slider__text-location--no-metro">просп.Победы, 18а</p>
-					</a>
-				</li>
-			</ul>
-		</div>
-		</div>
-
-<div class="tab-navigation__article--third-article"  id="thirdTab" >
-		<div class="slider">
-			<div class="slider__array-left"></div>	
-			<div class="slider__array-right"></div>	
-			<ul class="slider__box">
-				<li class="slider__list">
-					<a class="slider__link" href="">
-						<img class="slider__image" alt="" src="img/homees-05.png">
-						<p class="slider__text-price">11 800 грн</p>
-						<p class="slider__text-secondary-info">2 комн. &bull; 48 кв.м.</p>
-						<p class="slider__text-location">Политехнический институт</p>
-					</a>
-				</li>
-				<li class="slider__list">
-					<a class="slider__link" href="">
-						<img class="slider__image" alt="" src="img/homees-05.png">
-						<p class="slider__text-price"> 15 000 грн</p>
-						<p class="slider__text-secondary-info">3 комн. &bull; 100 кв.м.</p>
-						<p class="slider__text-location">Шулявская</p>
-					</a>
-				</li>
-				<li class="slider__list">
-					<a class="slider__link" href="">
-						<img class="slider__image" alt="" src="img/homees-05.png">
-						<p class="slider__text-price"> 11 800 грн</p>
-						<p class="slider__text-secondary-info">1 комн. &bull; 30 кв.м.</p>
-						<p class="slider__text-location--blue">Контрактовая площадь</p>
-					</a>
-				</li>
-				<li class="slider__list">
-					<a class="slider__link" href="">
-						<img class="slider__image" alt="" src="img/homees-05.png">
-						<p class="slider__text-price"> 7 000 грн</p>
-						<p class="slider__text-secondary-info">2 комн. &bull; 40 кв.м.</p>
-						<p class="slider__text-location slider__text-location--no-metro">просп.Победы, 18а</p>
-					</a>
-				</li>
-			</ul>
-		</div>
-		</div>  -->
-		<a class="section__link" href="">
-			Смотреть самые свежие объявления
-		</a>
-	</div>
-
-	</div>
+</div>
 
 
 
