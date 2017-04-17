@@ -1,16 +1,28 @@
 .section {
+	/* min-width: 890px; */
 	max-width: 1200px;
-	margin: 18px auto;
+	margin: 20px auto;
 	background-color: #fff;
-
-	.section__heading {
-    text-align: center;
-    font-size: 24px;
-    display: block;
-    padding: 24px;
+	
+	.section__paragraph {
+		text-align: center;
+		display: block;
+		font-size: 14px;
+    	width: 53%;
+    	margin: 0 auto 18px;
+    	line-height: 20px;
+    	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    	@media only screen and (max-width: 889px) {
+       width: 85%;
+    }
 	}
-
+	
+	.section__paragraph--no-shadow {
+		text-shadow: none;
+		margin-bottom: 20px;
+	}
 	.section__link {
+		
 		text-align: center;
 		display: block;
 		margin: 0 auto;
@@ -18,10 +30,15 @@
 		width: 100%;
 		height: 40px;
 		font-size: 16px;
-		opacity: 1.00;
 		border-top: 2px solid #F0F3F6;
 	}
 }
 
+.section--no-wrap {
+	background-color: rgba(90, 104, 114, 0);
+	padding: 20px 0;
+}
 
-
+.section--section-with-padding {
+	padding: 47px 55px 64px 40px;
+}
