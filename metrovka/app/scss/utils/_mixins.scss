@@ -1,0 +1,26 @@
+@mixin circle ($diameter, $color) {
+		display: block;
+		position: absolute;
+		height: $diameter;
+		width: $diameter;
+		background: $color;
+		border-radius: $diameter / 2;
+		content: "";
+}
+
+@mixin ring ($diameter, $color, $background) {
+		display: block;
+		position: absolute;
+		height: $diameter;
+		width: $diameter;
+		background: $background;
+		border: 2px solid $color;
+		border-radius: ($diameter + 4) / 2;
+		content: "";
+}
+
+
+@mixin tab-link-line ($main) {
+    a {border-bottom:2px solid $main;
+	}
+}
