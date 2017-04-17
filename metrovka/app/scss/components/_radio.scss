@@ -1,0 +1,33 @@
+.radio-label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 13px;
+}
+
+.radio {
+  display: none;
+}
+
+.radio-label:before {
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+  	margin-right: 10px;
+    position: absolute;
+    left:0;
+    bottom: 1px;
+    background-color:$main-color-design; 
+}
+
+.wrap .radio-label:before {
+	border-radius: 7px;
+}
+
+.radio:checked + .radio-label:before {	
+    @include ring (10px, $main-color-design,rgba(90, 104, 114, 0));
+}
+

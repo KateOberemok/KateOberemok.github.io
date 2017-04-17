@@ -1,0 +1,48 @@
+.button {
+	display: inline-block;
+	background: $main-color-design;
+	border-radius: 2px;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0.02px;
+	color: #FFFFFF;
+	padding: 11px 68px;
+
+	&:hover {
+		background: $main-color-design-active;
+		border: 1px solid $main-color-design-active-border;
+		line-height: 18px;
+	}
+
+	&:disabled {
+		opacity: 0.40;
+	}
+	
+	@media only screen and (max-width: 889px) {
+       padding: 11px 39px;
+	}
+}
+
+.button--small {
+	padding: 9px 23px;
+} 
+
+.wrap--button {
+	margin-left: 20px;
+}
+
+.button--secondary {
+	background: white;
+	color: $main-color-design;
+	padding: 11px 42px;
+	margin: 22px 0 0 40px;
+	border: 2px solid $main-color-design;
+	border-radius: 2px;
+
+	&:hover {
+	background: $main-color-design;
+	color: white;	
+	}
+}
+
+

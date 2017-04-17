@@ -1,0 +1,58 @@
+.menu-icon {
+	height: 30px;
+	width: 30px;
+	padding-top: 16px;
+    margin: 3px 0 -30px 1px;
+    float: right;
+    position: relative;
+
+
+	.menu-icon__circle {
+		@include circle (4px, white);
+
+	}
+
+	.menu-icon__circle--middle-circle {
+		margin-top: 8px;
+	}
+
+	.menu-icon__circle--bottom-circle {
+		margin-top: 16px;
+	}
+
+	.menu-icon__um-list {
+		margin: 25px 0 0 -100px;
+		display: none;
+
+	}
+	.menu-icon__list {
+		padding: 10px;
+		margin-left: -50px;background-color: white;
+/* 
+Rectangle 222
+background: #FFFFFF;
+opacity: 1.00;
+border: 1px solid #DFE3E6;
+
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+Path
+background: #DADADA;
+opacity: 1.00;
+Rectangle 223
+background: #DADADA;
+opacity: 1.00;
+transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0); */
+	}
+
+
+	/* Line */
+/* opacity: 1.00;
+border: 1px solid #DFE3E6; */
+
+}
+
+.menu-icon--short-list {
+	margin-left: 14em;
+}
+

@@ -1,0 +1,66 @@
+.text-little {
+    font-size: 12px;
+    line-height: 16px;
+    color: $text-grey;
+    margin: 8px 0 12px;
+  }
+
+  .text-little--icon {
+    color: #152935;
+    position: relative;
+    margin-left: 20px;
+  
+    &:before {
+      @include circle (8px, $red-circle);
+      margin: 4px 0 0 -20px;
+    }
+  }
+
+  .text-little--icon-blue:before {
+    @include circle (8px, $blue-circle);
+  }
+  
+  .text-little--no-icon {
+    margin-left: 0;
+  }
+  
+  .text-little--no-icon:before {
+    display: none;
+  }
+
+  .text-little--uppercase {
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+ .text-little--uppercase-blue {
+    @extend .text-little--uppercase;
+    color: $main-color-design;
+  }
+
+  .text-little--title {
+     font-size: 16px;
+     line-height: 24px;
+     text-align: left;
+  }
+
+  .text--little--little-indent {
+     margin-top: 20px;
+  }
+
+  .text--icon:after {
+    content: url(../img/shape.png);
+    margin-left: 16%;
+  }
+
+.text--white {
+   padding-bottom: 10px;
+   color: white;
+   font-size: 14px;
+   text-align: left;
+
+   @media only screen and (max-width: 889px) {
+       text-align: center;
+       padding-top: 20px; 
+   }
+}
